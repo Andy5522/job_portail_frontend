@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a style="color:aliceblue;" class="navbar-brand" href="#">Job Portel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a style="color:aliceblue;" class="nav-link active" aria-current="page" href="#">Home</a>
+        <a style="color:aliceblue;" class="nav-link " routerLink="read">All Users</a>
+        <a style="color:aliceblue;" class="nav-link active" aria-current="page" routerLink="Create">Create Users</a>
+        
+        <li class="nav-item dropdown">
+          <a style="color:aliceblue;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.shine.com/aboutus/">About Us</a></li>
+            <li><a class="dropdown-item" href="https://www.naukri.com/mynaukri/mn_contactus.php">Contact Us</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">More</a></li>
+          </ul>
+        </li>
+        
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
